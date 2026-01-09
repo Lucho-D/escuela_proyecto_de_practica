@@ -112,6 +112,8 @@ main {
   color: #333;
   transition: transform 0.3s ease;
   background-color: #fff;
+  position: relative;   /* referencia para absolute */
+  padding-bottom: 3rem; 
 }
 
 #novedades .box-novedades:hover {
@@ -134,11 +136,21 @@ main {
   font-size: 16px;
 }
 
-#novedades a{
-    text-align: center;
-    justify-content: space-between; /* izquierda - derecha */
-    align-items: center;            /* centro vertical */
+.link-info {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
+
+.link-info:hover {
+    color: #0ab835;
+}
+
 
 .boton-novedades {
     display: block;
