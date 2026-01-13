@@ -48,7 +48,7 @@ header {
 }
 
 body {
-    background-color: #999999;
+    background-color: #c9c9c9;
 }
 
 main {
@@ -56,6 +56,10 @@ main {
   margin: 0 auto;
   padding: 0 20px;
   padding-bottom: 280px;
+}
+
+h2 {
+    margin: 20px 0;
 }
 
 /* Carrusel */
@@ -94,9 +98,30 @@ main {
 .carousel-caption h1 {
     font-size: 3rem;
     font-weight: 600;
-    color: rgb(15, 88, 25);
-    -webkit-text-stroke: 1px #ffffff;
+    color: rgb(255, 255, 255);
+    /* -webkit-text-stroke: 1px #ffffff; */
 }
+
+/* Institucional */
+
+#institucional-resumen {
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+    overflow: hidden;
+    color: #333;
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
+    position: relative;   /* referencia para absolute */
+    padding-bottom: 3rem; 
+}
+
+#institucional-resumen .box-institucional {
+    margin: 20px 60px;
+    font-size: 19px;
+    text-align: center;
+} 
+
 
 /* Novedades */
 
@@ -140,7 +165,6 @@ main {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
-
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -152,7 +176,7 @@ main {
 }
 
 
-.boton-novedades {
+.boton-ver-mas {
     display: block;
     width: fit-content;
     margin: 2rem auto 0 auto;
